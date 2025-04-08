@@ -1,1 +1,1 @@
-# React + TypeScript + Vite (Personal Web)
+# Personal Web using React + TypeScript + Vite
