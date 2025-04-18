@@ -36,3 +36,44 @@ nav a:hover {
 h2 {
   color: #333;
 }
+
+.navmenu > ul > li.active {
+  box-shadow: 0 0 4px 2px;
+}
+
+@media (max-width: 768px) { 
+  .logo > .sitename,
+  .logo > .logo-img  {
+      display: none;
+  }
+
+  .navmenu > ul > li {
+    width: 15%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    font-size: 30px;
+  }
+
+  .menu-label {
+    display: none;
+  }
+}
+
+
+/* .navmenu-bottom-mobile {
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgb(8, 8, 122);
+}
+
+.navmenu-bottom-mobile > ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+} */

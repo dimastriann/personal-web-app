@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
@@ -16,17 +16,17 @@ import Contact from './pages/Contact';
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [activeMenu, setActiveMenu] = useState<string>("")
 
   return (
     <Router>
-      <Header/>
+      <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/portfolio" element={<Portfolio/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
     </Router>

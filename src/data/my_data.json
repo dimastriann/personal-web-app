@@ -40,24 +40,41 @@
     },
     "skills": {
         "technical_skill": [
-            {"id": "py", "label": "Python", "level": 90},
-            {"id": "js", "label": "Javasciprt", "level": 85},
-            {"id": "ts", "label": "Typescript", "level": 75},
-            {"id": "html", "label": "HTML", "level": 90},
-            {"id": "css", "label": "CSS", "level": 90},
-            {"id": "sql", "label": "SQL", "level": 90},
-            {"id": "no_sql", "label": "NoSQL", "level": 70}
+            {"id": "py", "label": "Python", "level": 90, "color": "", "logo": ""},
+            {"id": "js", "label": "Javasciprt", "level": 85, "color": "", "logo": ""},
+            {"id": "ts", "label": "Typescript", "level": 75, "color": "", "logo": ""},
+            {"id": "html", "label": "HTML", "level": 90, "color": "", "logo": ""},
+            {"id": "css", "label": "CSS", "level": 90, "color": "", "logo": ""},
+            {"id": "sql", "label": "SQL", "level": 90, "color": "", "logo": ""},
+            {"id": "no_sql", "label": "NoSQL", "level": 65, "color": "", "logo": ""},
+            {"id": "nodejs", "label": "NodeJS", "level": 70, "color": "", "logo": ""}
         ],
-        "soft_skill": [],
-        "languages": [],
+        "technical_framework": [
+            {"id": "odoo_erp", "label": "Odoo ERP", "level": 90, "color": "", "logo": ""},
+            {"id": "owl", "label": "OWL (Odoo Frontend)", "level": 85, "color": "", "logo": ""},
+            {"id": "react", "label": "ReactJS", "level": 75, "color": "", "logo": ""},
+            {"id": "jquery", "label": "JQuery", "level": 85, "color": "", "logo": ""},
+            {"id": "bootstrap", "label": "Bootstrap", "level": 85, "color": "", "logo": ""},
+            {"id": "bottle", "label": "Bottle (Python)", "level": 75, "color": "", "logo": ""},
+            {"id": "pyqt", "label": "Pyqt (Python)", "level": 70, "color": "", "logo": ""}
+        ],
+        "soft_skill": [
+            {"id": "ps", "label": "Problem Solving", "level": 90, "color": ""}
+        ],
+        "languages": [
+            {"id": "en", "label": "English", "level_label": "Intermediate", "level": 60, "color": ""},
+            {"id": "id", "label": "Indonesia", "level_label": "Native", "level": 95, "color": ""},
+            {"id": "sunda", "label": "Sunda", "level_label": "Native", "level": 95, "color": ""},
+            {"id": "sa", "label": "Arabic", "level_label": "Beginner", "level": 25, "color": ""}
+        ],
         "certifications": []
     },
     "projects": [],
     "menus": [
-        {"id": "home", "title": "Home", "route": "/"}, 
-        {"id": "about", "title": "About", "route": "/about"},
-        {"id": "portfolio", "title": "Portfolio", "route": "/portfolio"},
-        {"id": "contact", "title": "Contact", "route": "/contact"}
+        {"id": "home", "title": "Home", "route": "/", "icon": "bi bi-house-door"}, 
+        {"id": "about", "title": "About", "route": "/about","icon": "bi bi-person-vcard"},
+        {"id": "portfolio", "title": "Portfolio", "route": "/portfolio","icon": "bi bi-gear-wide-connected"},
+        {"id": "contact", "title": "Contact", "route": "/contact", "icon": "bi bi-telephone-inbound-fill"}
     ],
     "contacts":{
         "email": {"label": "Email", "value": "dimastriannugraha@gmail.com"},
