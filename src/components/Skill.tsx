@@ -8,7 +8,7 @@ interface Skill {
     logo?: string
 }
 
-const Skills: React.FC<Skill> = ({id, label, level, level_label, logo}) => {
+const Skills: React.FC<Skill> = ({id, label, level, level_label}) => {
     return (
         <div className="progress" data-id={id}>
             <span className="skill">
