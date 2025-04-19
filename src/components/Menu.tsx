@@ -23,8 +23,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({id, title, link, icon, active
     return (
         <li title={title} className={activeMenu ? "active" : ""}>
             <Link to={link} onClick={() => setActiveMenu(id)}>
-                <i className={`me-2 menu-icon ${icon}`}></i>
-                <span className="menu-label">{title}</span>
+                <i className={`menu-icon ${icon}`}></i>
+                <span className="ms-2 menu-label">{title}</span>
             </Link>
         </li>
     )

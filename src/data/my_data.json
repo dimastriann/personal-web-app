@@ -20,21 +20,26 @@
                 "to": "2018", 
                 "university_name": "STT Wastukancana Purwakarta",
                 "major": "Informatics Engineering",
-                "level": "Bachelor"
+                "level": "Bachelor's Degree",
+                "address": "Purwakarta, West Java, Indonesia"
             }
         ],
         "work_experiences": [
             {
-                "from": "February 2019",
-                "to": "August 2020",
-                "company_name": "Matrica Consulting Service, PT",
-                "role": "Odoo Developer"
-            },
-            {
+                "id": "ark",
                 "from": "August 2020",
                 "to": "Present",
                 "company_name": "Arkana Solusi Digital, PT",
-                "role": "Senior Odoo Developer (Technical Consultant)"
+                "role": "Senior Odoo Developer (Technical Consultant)",
+                "address": "Jakarta, Indonesia"
+            },
+            {
+                "id": "mcs",
+                "from": "February 2019",
+                "to": "August 2020",
+                "company_name": "Matrica Consulting Service, PT",
+                "role": "Odoo Developer",
+                "address": "Jakarta, Indonesia"
             }
         ]
     },
@@ -73,7 +78,7 @@
     "menus": [
         {"id": "home", "title": "Home", "route": "/", "icon": "bi bi-house-door"}, 
         {"id": "about", "title": "About", "route": "/about","icon": "bi bi-person-vcard"},
-        {"id": "portfolio", "title": "Portfolio", "route": "/portfolio","icon": "bi bi-gear-wide-connected"},
+        {"id": "portfolio", "title": "Portfolio", "route": "/portfolio","icon": "bi bi-laptop"},
         {"id": "contact", "title": "Contact", "route": "/contact", "icon": "bi bi-telephone-inbound-fill"}
     ],
     "contacts":{
