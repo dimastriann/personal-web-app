@@ -1,6 +1,5 @@
 // src/pages/About.tsx
 import React from 'react';
-import Skills from '../components/Skill';
 
 import appData from "../data/my_data.json";
 
