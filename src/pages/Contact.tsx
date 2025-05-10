@@ -1,94 +1,61 @@
 // src/pages/Contact.tsx
-import React from 'react';
+import React from "react";
+import { Smartphone, MapPin, Mail } from "lucide-react";
 
 import appData from "../data/my_data.json";
 
 const Contact: React.FC = () => {
-  const {contacts, profile} = appData;
-  return (
-    <section id="contact" className="contact section">
-
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p></p>
-      </div>
-
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div className="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div className="row gy-5">
-
-            <div className="col-lg-4">
-              <div className="info-item d-flex align-items-center">
-                <i className="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>{profile.address}</p>
+    const { contacts, profile } = appData;
+    return (
+        <section className="min-h-screen px-6 py-16 text-center">
+            {/* Contact Info */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-blue-100">
+                <div className="flex items-center gap-2 justify-center">
+                    <Smartphone className="w-5 h-5 text-[#FDB913]" />{" "}
+                    <span>{contacts.phone.value}</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="info-item d-flex align-items-center">
-                <a href={"tel:" + contacts.phone.value} className="text-decoration-none">
-                  <i className="bi bi-telephone flex-shrink-0"></i>
-                </a>
-                <div>
-                  <h3>{contacts.phone.label}</h3>
-                  <p>{contacts.phone.value}</p>
+                <div className="flex items-center gap-2 justify-center">
+                    <MapPin className="w-5 h-5 text-[#FDB913]" />{" "}
+                    <span>{profile.address}</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="info-item d-flex align-items-center">
-                <a href={"mailto:" + contacts.email.value} className="text-decoration-none">
-                  <i className="bi bi-envelope flex-shrink-0"></i>
-                </a>
-                <div>
-                <h3>{contacts.email.label}</h3>
-                <p>{contacts.email.value}</p>
+                <div className="flex items-center gap-2 justify-center">
+                    <Mail className="w-5 h-5 text-[#FDB913]" />{" "}
+                    <span>{contacts.email.value}</span>
                 </div>
-              </div>
             </div>
 
-          </div>
-        </div>
-
-        <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div className="row gy-4">
-
-            <div className="col-md-6">
-              <input type="text" name="name" className="form-control" placeholder="Your Name" required={true}/>
-            </div>
-
-            <div className="col-md-6 ">
-              <input type="email" className="form-control" name="email" placeholder="Your Email" required={true}/>
-            </div>
-
-            <div className="col-md-12">
-              <input type="text" className="form-control" name="subject" placeholder="Subject" required={true}/>
-            </div>
-
-            <div className="col-md-12">
-              <textarea className="form-control" name="message" rows={6} placeholder="Message" required={true}></textarea>
-            </div>
-
-            <div className="col-md-12 text-center">
-              <div className="loading">Loading</div>
-              <div className="error-message"></div>
-              <div className="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
-
-      </div>
-
-    </section>
-  );
+            {/* Contact Form */}
+            <form className="max-w-2xl mx-auto grid grid-cols-1 gap-4">
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="p-3 rounded bg-white/10 text-white placeholder:text-blue-200"
+                />
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="p-3 rounded bg-white/10 text-white placeholder:text-blue-200"
+                />
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    className="p-3 rounded bg-white/10 text-white placeholder:text-blue-200"
+                />
+                <textarea
+                    rows={4}
+                    placeholder="Your Message"
+                    className="p-3 rounded bg-white/10 text-white placeholder:text-blue-200"
+                />
+                <button
+                    type="submit"
+                    onClick={() => alert("Under Construction")}
+                    className="mt-4 bg-[#FDB913] text-[#004D98] font-semibold py-2 rounded hover:bg-[#fbcf3c] transition"
+                >
+                    Send Message
+                </button>
+            </form>
+        </section>
+    );
 };
 
 export default Contact;

@@ -1,4 +1,7 @@
-:root {
+@import "tailwindcss";
+
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +68,44 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
+
+
+/*--------------------------------------------------------------
+  # About Section
+  --------------------------------------------------------------*/
+  .about .progress {
+    height: 36px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin-top: 15px;
+  }
+  
+  .about .progress .skill {
+    color: var(--default-color);
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    /* font-family: var(--heading-font); */
+  }
+  
+  .about .progress .skill .val {
+    float: right;
+    /* font-style: normal; */
+  }
+  
+  .about .progress-bar-wrap {
+    background: color-mix(in srgb, #FDB913, transparent 90%);
+    height: 10px;
+  }
+  
+  .about .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #FDB913;
+  }
+  

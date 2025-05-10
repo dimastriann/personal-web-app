@@ -1,5 +1,5 @@
 import React from "react";
-import {Menu} from "./Menu";
+import { Menu } from "./Menu";
 
 // interface HeaderProps {
 //     activeMenu: boolean
@@ -7,16 +7,16 @@ import {Menu} from "./Menu";
 
 const Header: React.FC = () => {
     return (
-        <header className="header d-flex align-items-center sticky-top">
-            <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-                <a href="/" className="logo d-flex align-items-center">
-                    <img src="/img/my-logo.png" className="logo-img" alt="" style={{borderRadius: 15}}/>
+        <header className="header sticky bottom-0 md:top-0">
+            {/* <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"> */}
+            {/* <a href="/" className="">
+                <img src="/img/my-logo.png" className="logo-img" alt="" style={{borderRadius: 15}}/>
                     <h1 className="sitename">DimasTN</h1>
-                </a>
-                <Menu />
-            </div>
+                </a> */}
+            <Menu />
+            {/* </div> */}
         </header>
-    )
-}
+    );
+};
 
 export default Header;

@@ -1,71 +1,183 @@
 // src/pages/About.tsx
-import React from 'react';
+import React, { useState } from "react";
+import { X } from "lucide-react";
 
-import appData from "../data/my_data.json";
+// import appData from "../data/my_data.json";
+
+type Certificate = {
+    title: string;
+    image: string;
+};
 
 const Portfolio: React.FC = () => {
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const [selectedCert, setSelectedCert] = useState<Certificate>({
+        title: "",
+        image: "",
+    });
 
-  const { educations, work_experiences } = appData.profile;
-  return (
-    <section id="portfolio" className="portfolio section">
+    const certificates = [
+        {
+            title: "Software Engineer",
+            image: "/certificates/software.png",
+        },
+        {
+            title: "Full Stack Web Developer",
+            image: "/certificates/fullstack.png",
+        },
+        {
+            title: "Javascript",
+            image: "/certificates/javascript.png",
+        },
+    ];
 
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p></p>
-      </div>
-
-      <div className="container">
-
-        <div className="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          {/* <ul className="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" className="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul> */}
-
-          <div className="row gy-4">
-            <div className="col-md-6">
-            <h4>Work Experience</h4>
-              {work_experiences.map((work) => 
-                (
-                  <div className="mb-4">
-                    <div className="mb-2">{work.from} - {work.to} <span><strong>{work.role}</strong></span></div>
-                    <h5>{work.company_name}</h5>
-                    <div>{work.address}</div>
-                  </div>
-                )
-              )}
+    // const testimonials = [
+    //   {
+    //     quote: "Dimas is an exceptional developer with a deep understanding of web technologies.",
+    //     author: "..."
+    //   },
+    //   {
+    //     quote: "His contributions made a big difference in our delivery timelines.",
+    //     author: "..."
+    //   }
+    // ];
+    // const { educations, work_experiences } = appData.profile;
+    return (
+        <section id="portfolio" className="portfolio section p-6">
+            <div className="mb-12">
+                <h3 className="text-2xl font-semibold text-white mb-4">
+                    Work Experience
+                </h3>
+                <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Developed a modern e-learning platform with quiz and
+                        progress tracking.
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Built a real-time queue screen system for hospital and
+                        clinic displays.
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Customized POS system for retail shops including barcode
+                        scanning and inventory sync.
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Integrated payment gateway and reporting tools.
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Developed internal dashboards and admin panels with user
+                        access control.
+                    </li>
+                </ul>
+            </div>
+            <div className="mb-12">
+                <h3 className="text-2xl font-semibold text-white mb-4">
+                    Project List
+                </h3>
+                <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        E-learning Web App
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Queue Display System
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        POS Customization
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        Dashboard for Inventory
+                    </li>
+                    <li className="bg-white/10 p-4 rounded-xl text-blue-100">
+                        React + Tailwind Starter Kit
+                    </li>
+                </ul>
             </div>
 
-            <div className="col-md-6">
-              <h4>Educations</h4>
-              <div className="about-me">
-                {educations.map((education) => 
-                  (
-                    <div className="mb-4">
-                      <div className="mb-2">
-                        {education.from} - {education.to} 
-                        <span className="mx-2"><strong>{education.major}</strong></span>
-                        <span>({education.level})</span>
-                      </div>
-                      <h5>{education.university_name}</h5>
-                      <div>{education.address}</div>
+            <div className="mb-12">
+                <h3 className="text-2xl font-semibold text-white mb-4">
+                    Certifications
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {certificates.map((cert, index) => (
+                        <div
+                            key={index}
+                            className="bg-white/10 p-4 rounded-xl text-blue-100"
+                        >
+                            <p>{cert.title}</p>
+                            <button
+                                className="mt-2 underline text-[#FDB913] cursor-pointer"
+                                onClick={() => {
+                                    setSelectedCert(cert);
+                                    setShowModal(true);
+                                }}
+                            >
+                                View Certificate
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="mb-12">
+                <h3 className="text-2xl font-semibold text-white mb-4">
+                    Tools & Technologies
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-blue-100">
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        React.js, Next.js
                     </div>
-                  )
-                )}
-              </div>
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        Node.js, Express
+                    </div>
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        Tailwind CSS, Bootstrap
+                    </div>
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        MySQL, PostgreSQL
+                    </div>
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        Odoo ERP Customization
+                    </div>
+                    <div className="bg-white/10 p-4 rounded-xl">
+                        Git, GitHub, CI/CD
+                    </div>
+                </div>
             </div>
-          </div>
 
+            {/* <div className="mb-12">
+        <h3 className="text-2xl font-semibold text-white mb-4 flex items-center gap-2"><MessageSquareQuote className="w-6 h-6" /> Testimonials</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {testimonials.map((item, idx) => (
+            <div key={idx} className="bg-white/10 p-4 rounded-xl text-blue-100">
+              <p className="italic mb-2">“{item.quote}”</p>
+              <p className="text-right text-sm">— {item.author}</p>
+            </div>
+          ))}
         </div>
+      </div> */}
 
-      </div>
-
-    </section>
-  )
+            {showModal && (
+                <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-xl p-4 max-w-3xl w-full relative">
+                        <button
+                            className="absolute top-2 right-2 text-gray-700 cursor-pointer"
+                            onClick={() => setShowModal(false)}
+                        >
+                            <X className="w-6 h-6" />
+                        </button>
+                        <h3 className="text-xl font-bold mb-4 text-center text-[#004D98]">
+                            {selectedCert.title}
+                        </h3>
+                        <img
+                            src={selectedCert.image}
+                            alt={selectedCert.title}
+                            className="w-full rounded"
+                        />
+                    </div>
+                </div>
+            )}
+        </section>
+    );
 };
 
 export default Portfolio;
