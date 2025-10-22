@@ -16,9 +16,9 @@
         ],
         "educations": [
             {
-                "from": "2014", 
-                "to": "2018", 
-                "university_name": "STT Wastukancana Purwakarta",
+                "from": "2014",
+                "to": "2018",
+                "universityName": "STT Wastukancana Purwakarta",
                 "major": "Informatics Engineering",
                 "level": "Bachelor's Degree",
                 "address": "Purwakarta, West Java, Indonesia"
@@ -26,68 +26,434 @@
         ],
         "work_experiences": [
             {
-                "id": "ark",
+                "id": "asd",
                 "from": "August 2020",
                 "to": "Present",
-                "company_name": "Arkana Solusi Digital, PT",
+                "companyName": "Arkana Solusi Digital, PT",
                 "role": "Senior Odoo Developer (Technical Consultant)",
-                "address": "Jakarta, Indonesia"
+                "address": "Jakarta, Indonesia",
+                "summary": [
+                    "Implemented and customized Odoo versions 10–18 (community & enterprise)",
+                    "Strong functional understanding across customized modules"
+                ],
+                "projects": [
+                    {
+                        "client": "Indoturbine, PT",
+                        "highlights": [
+                            "Enhanced and improved Accounting Report (General Ledger)"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Accounting",
+                            "Reporting"
+                        ]
+                    },
+                    {
+                        "client": "PMKI (Puncak Masa Keemasan Indonesia, PT)",
+                        "highlights": [
+                            "Enhancements to base Odoo modules (Sales, Inventory)",
+                            "Integrated Odoo master & transactions with external apps (API consumer)"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Sales",
+                            "Inventory",
+                            "Integration",
+                            "API"
+                        ]
+                    },
+                    {
+                        "client": "Delameta Bilano, PT",
+                        "highlights": [
+                            "Enhancements to base modules (Sales, Inventory, Project, Expense, Accounting)",
+                            "Developed project overview reports with budget & stock connections"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Sales",
+                            "Inventory",
+                            "Project",
+                            "Expense",
+                            "Accounting",
+                            "Reporting"
+                        ]
+                    },
+                    {
+                        "client": "Dagangan, PT",
+                        "highlights": [
+                            "Enhancements to Accounting module",
+                            "Integrated Odoo transactions with external apps (API consumer)",
+                            "Built dynamic accounting reports (custom columns & computations, enterprise edition)"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Accounting",
+                            "Integration",
+                            "API",
+                            "Reporting"
+                        ]
+                    },
+                    {
+                        "client": "Medika (Kartika Bina Medikatama, PT)",
+                        "highlights": [
+                            "Developed custom e-learning flow: scoring rules, quiz timer, video seek blocking, bulk registration",
+                            "Built clinic patient queue with long-polling",
+                            "Customized clinic admission, poly workflow, and invoice payment"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "E-learning",
+                            "Healthcare",
+                            "Long-polling",
+                            "Payments"
+                        ]
+                    },
+                    {
+                        "client": "Bulog, PT",
+                        "highlights": [
+                            "Custom budget reports using full SQL for performance",
+                            "Integrated Odoo masters & transactions across instances via API/JSON-RPC (invoices/bills)"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "SQL",
+                            "Performance",
+                            "Integration",
+                            "JSON-RPC"
+                        ]
+                    },
+                    {
+                        "client": "ABA (Asia Bandar Alam, PT)",
+                        "highlights": [
+                            "Customized PoS promotions & membership flows"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "PoS",
+                            "Promotions",
+                            "Membership"
+                        ]
+                    },
+                    {
+                        "client": "Monotaro Indonesia",
+                        "highlights": [
+                            "Enhancements across Sales, Purchase, Inventory, Accounting",
+                            "Built local Python proxy app for direct printing from Odoo with per-report configs"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Sales",
+                            "Purchase",
+                            "Inventory",
+                            "Accounting",
+                            "Python",
+                            "Printing"
+                        ]
+                    },
+                    {
+                        "client": "Margaria Group",
+                        "highlights": [
+                            "Enhancements across Sales, Purchase, Inventory, Accounting",
+                            "Developed REST API endpoints (ext. muk_rest) for PoS integration",
+                            "Customized PoS membership & promotions",
+                            "Customize direct print POS receipt on Windows and Android"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "REST API",
+                            "PoS",
+                            "Integration",
+                            "Sales",
+                            "Purchase",
+                            "Inventory",
+                            "Accounting"
+                        ]
+                    }
+                ]
             },
             {
                 "id": "mcs",
                 "from": "February 2019",
                 "to": "August 2020",
-                "company_name": "Matrica Consulting Service, PT",
+                "companyName": "Matrica Consulting Service, PT",
                 "role": "Odoo Developer",
-                "address": "Jakarta, Indonesia"
+                "address": "Jakarta, Indonesia",
+                "summary": [
+                    "Developed Odoo modules (custom & marketplace) following best practices",
+                    "Customized modules: Accounting, Purchase, Sales, Inventory, HR, Website",
+                    "Implemented Odoo versions 10 & 11 (community & enterprise)",
+                    "Strong functional understanding across customized modules"
+                ],
+                "projects": [
+                    {
+                        "client": "Binajasa Abadikarya (BIJAK), PT",
+                        "highlights": [
+                            "Custom Sale, Purchase and Invoice"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Sales",
+                            "Purchase",
+                            "Accounting"
+                        ]
+                    },
+                    {
+                        "client": "Bulog, PT",
+                        "highlights": [
+                            "Custom Sale, Purchase and Invoice"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Sales",
+                            "Purchase",
+                            "Accounting"
+                        ]
+                    }
+                ]
             }
         ]
     },
     "skills": {
         "technical_skill": [
-            {"id": "py", "label": "Python", "level": 90, "color": "", "logo": ""},
-            {"id": "js", "label": "Javasciprt", "level": 85, "color": "", "logo": ""},
-            {"id": "ts", "label": "Typescript", "level": 75, "color": "", "logo": ""},
-            {"id": "html", "label": "HTML", "level": 90, "color": "", "logo": ""},
-            {"id": "css", "label": "CSS", "level": 90, "color": "", "logo": ""},
-            {"id": "sql", "label": "SQL", "level": 90, "color": "", "logo": ""},
-            {"id": "no_sql", "label": "NoSQL", "level": 65, "color": "", "logo": ""},
-            {"id": "nodejs", "label": "NodeJS", "level": 65, "color": "", "logo": ""}
+            {
+                "id": "py",
+                "label": "Python",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "js",
+                "label": "Javasciprt",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "ts",
+                "label": "Typescript",
+                "level": 75,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "html",
+                "label": "HTML",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "css",
+                "label": "CSS",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "sql",
+                "label": "SQL",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "no_sql",
+                "label": "NoSQL",
+                "level": 65,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "nodejs",
+                "label": "NodeJS",
+                "level": 65,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "rust",
+                "label": "Rust",
+                "level": 30,
+                "color": "",
+                "logo": ""
+            }
         ],
         "technical_framework": [
-            {"id": "odoo_erp", "label": "Odoo ERP", "level": 90, "color": "", "logo": ""},
-            {"id": "owl", "label": "OWL (Odoo Frontend)", "level": 85, "color": "", "logo": ""},
-            {"id": "react", "label": "ReactJS", "level": 70, "color": "", "logo": ""},
-            {"id": "jquery", "label": "JQuery", "level": 85, "color": "", "logo": ""},
-            {"id": "bootstrap", "label": "Bootstrap", "level": 85, "color": "", "logo": ""},
-            {"id": "bottle", "label": "Bottle (Python)", "level": 70, "color": "", "logo": ""},
-            {"id": "pyqt", "label": "Pyqt (Python)", "level": 70, "color": "", "logo": ""}
+            {
+                "id": "odoo_erp",
+                "label": "Odoo ERP",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "owl",
+                "label": "OWL (Odoo Frontend)",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "react",
+                "label": "ReactJS",
+                "level": 70,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "jquery",
+                "label": "JQuery",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "bootstrap",
+                "label": "Bootstrap",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "bottle",
+                "label": "Bottle (Python)",
+                "level": 70,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "pyqt",
+                "label": "Pyqt (Python)",
+                "level": 70,
+                "color": "",
+                "logo": ""
+            }
         ],
         "soft_skill": [
-            {"id": "ps", "label": "Problem Solving", "level": 90, "color": ""},
-            {"id": "ct", "label": "Critical Thinking", "level": 87, "color": ""},
-            {"id": "tw", "label": "Team Work", "level": 87, "color": ""}
+            {
+                "id": "ps",
+                "label": "Problem Solving",
+                "level": 90,
+                "color": ""
+            },
+            {
+                "id": "ct",
+                "label": "Critical Thinking",
+                "level": 87,
+                "color": ""
+            },
+            {
+                "id": "tw",
+                "label": "Team Work",
+                "level": 87,
+                "color": ""
+            }
         ],
         "languages": [
-            {"id": "en", "label": "English", "level_label": "Intermediate", "level": 60, "color": ""},
-            {"id": "id", "label": "Indonesia", "level_label": "Native", "level": 95, "color": ""},
-            {"id": "sunda", "label": "Sunda", "level_label": "Native", "level": 95, "color": ""},
-            {"id": "sa", "label": "Arabic", "level_label": "Beginner", "level": 25, "color": ""}
+            {
+                "id": "en",
+                "label": "English",
+                "level_label": "Intermediate",
+                "level": 60,
+                "color": ""
+            },
+            {
+                "id": "id",
+                "label": "Indonesia",
+                "level_label": "Native",
+                "level": 95,
+                "color": ""
+            },
+            {
+                "id": "sunda",
+                "label": "Sunda",
+                "level_label": "Native",
+                "level": 95,
+                "color": ""
+            },
+            {
+                "id": "sa",
+                "label": "Arabic",
+                "level_label": "Beginner",
+                "level": 25,
+                "color": ""
+            }
         ],
-        "certifications": []
+        "certifications": [
+            {
+                "id": "1xw2RIDOZCMLdYvqPZ4i2DnnHuQQG62dn",
+                "title": "Software Engineer",
+                "image": "https://drive.google.com/thumbnail?id=1xw2RIDOZCMLdYvqPZ4i2DnnHuQQG62dn&sz=s800"
+            },
+            {
+                "id": "1UcA641oRrJyc4hpJEX7Ay9cjrnu_vuh2",
+                "title": "SQL Intermediate",
+                "image": "https://drive.google.com/thumbnail?id=1UcA641oRrJyc4hpJEX7Ay9cjrnu_vuh2&sz=s800"
+            },
+            {
+                "id": "1JirmRknO3_aApK8ryWUWc5goJzk9NHH9",
+                "title": "Frontend Developer",
+                "image": "https://drive.google.com/thumbnail?id=1JirmRknO3_aApK8ryWUWc5goJzk9NHH9&sz=s800"
+            },
+            {
+                "id": "1exafP2qsBfyKFfZwrUoALzfitVZ6rIH0",
+                "title": "Rest API Intermediate",
+                "image": "https://drive.google.com/thumbnail?id=1exafP2qsBfyKFfZwrUoALzfitVZ6rIH0&sz=s800"
+            },
+            {
+                "id": "UC-00a2b778-52ef-4bb4-8bc6-cc03a38e9226",
+                "title": "Typescript + Framework",
+                "image": "https://udemy-certificate.s3.amazonaws.com/image/UC-00a2b778-52ef-4bb4-8bc6-cc03a38e9226.jpg"
+            }
+        ]
     },
-    "projects": [],
     "menus": [
-        {"id": "home", "title": "Home", "route": "/", "icon": "home"}, 
-        {"id": "about", "title": "About", "route": "/about","icon": "user"},
-        {"id": "portfolio", "title": "Portfolio", "route": "/portfolio","icon": "profile"},
-        {"id": "contact", "title": "Contact", "route": "/contact", "icon": "contact"}
+        {
+            "id": "home",
+            "title": "Home",
+            "route": "/",
+            "icon": "home"
+        },
+        {
+            "id": "about",
+            "title": "About",
+            "route": "/about",
+            "icon": "user"
+        },
+        {
+            "id": "portfolio",
+            "title": "Portfolio",
+            "route": "/portfolio",
+            "icon": "profile"
+        },
+        {
+            "id": "contact",
+            "title": "Contact",
+            "route": "/contact",
+            "icon": "contact"
+        }
     ],
-    "contacts":{
-        "email": {"label": "Email", "value": "dimastriannugraha@gmail.com"},
-        "linkedin": {"label": "LinkedIn", "value": "https://id.linkedin.com/in/dimasnugraha"},
-        "github": {"label": "Github", "value": "https://github.com/dimastriann"},
-        "gitlab": {"label": "Github", "value": "https://gitlab.com/dimastriann"},
-        "phone": {"label": "Phone/WA/Telegram", "value": "+6285213111885"}
+    "contacts": {
+        "email": {
+            "label": "Email",
+            "value": "dimastriannugraha@gmail.com"
+        },
+        "linkedin": {
+            "label": "LinkedIn",
+            "value": "https://id.linkedin.com/in/dimasnugraha"
+        },
+        "github": {
+            "label": "Github",
+            "value": "https://github.com/dimastriann"
+        },
+        "gitlab": {
+            "label": "Github",
+            "value": "https://gitlab.com/dimastriann"
+        },
+        "phone": {
+            "label": "Phone/WA/Telegram",
+            "value": "+6285213111885"
+        }
     }
 }
