@@ -4,7 +4,7 @@
         "last_name": "Trian Nugraha",
         "full_name": "Dimas Trian Nugraha",
         "role": "Software Engineer / Software Developer",
-        "current_role": "Odoo Technical / Developer",
+        "current_role": "Odoo Technical Consultant / Developer",
         "current_level": "Senior",
         "first_yow": "2019",
         "address": "Jakarta, Indonesia",
@@ -316,6 +316,13 @@
                 "logo": ""
             },
             {
+                "id": "tailwind",
+                "label": "TailwindCSS",
+                "level": 75,
+                "color": "",
+                "logo": ""
+            },
+            {
                 "id": "bottle",
                 "label": "Bottle (Python)",
                 "level": 70,
@@ -354,8 +361,8 @@
             {
                 "id": "en",
                 "label": "English",
-                "level_label": "Intermediate",
-                "level": 60,
+                "level_label": "Upper Intermediate",
+                "level": 70,
                 "color": ""
             },
             {

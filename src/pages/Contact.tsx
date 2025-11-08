@@ -12,7 +12,9 @@ const Contact: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-blue-100">
         <div className="flex items-center gap-2 justify-center">
           <Smartphone className="w-5 h-5 text-[#FDB913]" />{' '}
-          <span title={contacts.phone.label}><a href={`tel:${contacts.phone.value}`}>{contacts.phone.value}</a></span>
+          <span title={contacts.phone.label}>
+            <a href={`tel:${contacts.phone.value}`}>{contacts.phone.value}</a>
+          </span>
         </div>
         <div className="flex items-center gap-2 justify-center">
           <MapPin className="w-5 h-5 text-[#FDB913]" />{' '}
@@ -20,7 +22,11 @@ const Contact: React.FC = () => {
         </div>
         <div className="flex items-center gap-2 justify-center">
           <Mail className="w-5 h-5 text-[#FDB913]" />{' '}
-          <span title={contacts.email.label}><a href={`mailto:${contacts.email.value}`}>{contacts.email.value}</a></span>
+          <span title={contacts.email.label}>
+            <a href={`mailto:${contacts.email.value}`}>
+              {contacts.email.value}
+            </a>
+          </span>
         </div>
       </div>
 

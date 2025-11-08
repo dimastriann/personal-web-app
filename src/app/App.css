@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.about .progress {
+  height: 36px;
+  display: block;
+  background: none;
+  border-radius: 0;
+  margin-top: 15px;
+}
+
+.about .progress .skill {
+  color: var(--default-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  /* font-family: var(--heading-font); */
+}
+
+.about .progress .skill .val {
+  float: right;
+  /* font-style: normal; */
+}
+
+.about .progress-bar-wrap {
+  background: color-mix(in srgb, blue, transparent 90%);
+  height: 10px;
+}
+
+.about .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: grey;
+}

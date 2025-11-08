@@ -44,7 +44,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   return (
     <Link to={link} onClick={() => setActiveMenu(id)}>
       <button
-        className={`flex flex-col items-center text-xs p-3 rounded-xl transition-all w-[3.5rem] ${
+        className={`flex flex-col items-center text-xs p-3 rounded-xl transition-all w-14 ${
           activeMenu ? 'bg-[#FDB913] text-[#004D98]' : 'hover:bg-[#A50044]'
         } cursor-pointer`}
         onClick={() => setActiveMenu('home')}
