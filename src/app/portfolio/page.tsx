@@ -42,7 +42,7 @@ export default function PortfolioPage() {
                     <h3 className="text-lg md:text-xl font-semibold">
                       {exp.companyName}
                     </h3>
-                    <div className="text-sm text-neutral-600 flex flex-wrap gap-2 items-center">
+                    <div className="text-sm text-neutral-600 dark:text-white flex flex-wrap gap-2 items-center">
                       <span className="flex items-center gap-1">
                         <Briefcase className="w-4 h-4" /> {exp.role}
                       </span>

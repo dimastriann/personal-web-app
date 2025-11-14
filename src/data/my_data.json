@@ -33,8 +33,9 @@
                 "role": "Senior Odoo Developer (Technical Consultant)",
                 "address": "Jakarta, Indonesia",
                 "summary": [
+                    "Customized modules: Almost all the main modules",
                     "Implemented and customized Odoo versions 10–18 (community & enterprise)",
-                    "Strong functional understanding across customized modules"
+                    "Strong functional understanding across customized and core modules"
                 ],
                 "projects": [
                     {
@@ -179,10 +180,9 @@
                 "role": "Odoo Developer",
                 "address": "Jakarta, Indonesia",
                 "summary": [
-                    "Developed Odoo modules (custom & marketplace) following best practices",
                     "Customized modules: Accounting, Purchase, Sales, Inventory, HR, Website",
                     "Implemented Odoo versions 10 & 11 (community & enterprise)",
-                    "Strong functional understanding across customized modules"
+                    "Understanding across customized modules"
                 ],
                 "projects": [
                     {
@@ -454,13 +454,9 @@
             "label": "Github",
             "value": "https://github.com/dimastriann"
         },
-        "gitlab": {
-            "label": "Github",
-            "value": "https://gitlab.com/dimastriann"
-        },
-        "phone": {
-            "label": "Phone/WA/Telegram",
-            "value": "+6285213111885"
+        "telegram": {
+            "label": "Telegram",
+            "value": "https://t.me/dtn33"
         }
     }
 }

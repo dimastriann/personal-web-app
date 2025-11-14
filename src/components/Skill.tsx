@@ -12,15 +12,13 @@ const Skills: React.FC<Skill> = ({ id, label, level, level_label }) => {
   return (
     <div className="progress" data-id={id}>
       <div className="skill">
-        {/* <img src="/img/my-logo.png" className="me-2 inline-flex" width={15}/> */}
-        {/* <Settings className="inline-flex text-sm"/> */}
         <span>{label}</span>
         <span className="mx-2 fst-italic">{level_label}</span>
         <i className="val">{level}%</i>
       </div>
-      <div className="progress-bar-wrap">
+      <div className="progress-bar-wrap bg-blue-100 dark:bg-gray-50">
         <div
-          className="progress-bar"
+          className="progress-bar bg-gray-600"
           role="progressbar"
           aria-valuenow={level}
           aria-valuemin={0}

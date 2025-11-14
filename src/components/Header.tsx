@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Home, User, Laptop, Contact } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 import appData from '../data/my_data.json';
 
@@ -24,7 +25,7 @@ export default function Header() {
     >
       <nav
         id="navmenu"
-        className="right-0 z-10 flex justify-center gap-10 py-3 bg-[#004D98] backdrop-blur-md shadow-lg border-b border-[#002F6C] text-white"
+        className="right-0 z-10 flex justify-evenly md:justify-center md:gap-8 py-3 bg-blue-900 backdrop-blur-md shadow-lg text-white dark:bg-black"
       >
         {menus.map((menu) => (
           <MenuItem
@@ -36,6 +37,7 @@ export default function Header() {
             isActiveMenu={menu.route === pathname}
           />
         ))}
+        <ThemeToggle />
       </nav>
     </header>
   );
@@ -50,10 +52,10 @@ type MenuItemProps = {
 };
 
 const MenuIcon: Record<string, React.JSX.Element> = {
-  home: <Home className="me-1" />,
-  user: <User className="me-1" />,
-  profile: <Laptop className="me-1" />,
-  contact: <Contact className="me-1" />,
+  home: <Home className="me-1 w-5" />,
+  user: <User className="me-1 w-5" />,
+  profile: <Laptop className="me-1 w-5" />,
+  contact: <Contact className="me-1 w-5" />,
 };
 
 export function MenuItem({
@@ -68,10 +70,10 @@ export function MenuItem({
       <Link
         id={id}
         href={link}
-        className={`flex hover:bg-blue-400 p-2 rounded-md ${isActiveMenu ? 'active bg-blue-500' : ''}`}
+        className={`flex hover:bg-blue-400 hover:dark:bg-gray-700 p-2 rounded-md ${isActiveMenu ? 'active bg-blue-500 dark:bg-gray-600' : ''}`}
       >
         {MenuIcon[icon]}
-        {title}
+        <span className="mt-0.5">{title}</span>
       </Link>
     </>
   );

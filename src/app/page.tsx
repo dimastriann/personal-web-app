@@ -50,8 +50,7 @@ export default function HomePage() {
   ];
 
   return (
-    <section className="relative min-h-screen md:mt-16 bg-linear-to-br from-gray-50 to-gray-100 overflow-hidden">
-      {/* Left logos */}
+    <section className="relative md:mt-16">
       <div className="absolute left-5 top-1/4 flex flex-col gap-6">
         {leftLogos.map((logo, i) => (
           <img
@@ -62,8 +61,6 @@ export default function HomePage() {
           />
         ))}
       </div>
-
-      {/* Right logos */}
       <div className="absolute right-5 top-1/4 flex flex-col gap-6">
         {rightLogos.map((logo, i) => (
           <img
@@ -75,26 +72,27 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* Main content */}
       <div className="flex justify-center items-center min-h-screen">
-        <div className="rounded-md shadow-2xl bg-white md:w-[60%] p-10 relative z-10">
+        <div className="rounded-md shadow-2xl bg-white md:w-[60%] p-10 relative z-10 dark:bg-gray-800">
+          <div className="uppercase text-center mb-4">
+            <h2 className="text-2xl">Hi There</h2>
+            <h1 className="text-5xl">I am</h1>
+            <h1 className="text-4xl font-bold">Dimas Trian Nugraha</h1>
+            <h1 className="text-2xl text-gray-600 dark:text-gray-50">
+              Odoo Developer / Software Engineer
+            </h1>
+          </div>
           <div className="flex flex-col xl:grid xl:grid-cols-2 items-center">
             {/* Text Section */}
             <div className="text-left space-y-4">
-              <div className="uppercase">
-                <h2 className="text-3xl">Hi There</h2>
-                <h1 className="text-5xl">I am</h1>
-                <h1 className="text-4xl font-bold">Dimas Trian Nugraha</h1>
-                <h1 className="text-2xl text-gray-600">Software Engineer</h1>
-              </div>
-              <p className="text-gray-700">
+              <p className="text-black dark:text-white text-justify">
                 I specialize in building high-performance web applications with
                 modern JavaScript and Python frameworks, especially in Odoo ERP.
                 I enjoy solving complex problems, designing user-friendly
                 interfaces, and delivering efficient, scalable software
                 solutions.
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-justify dark:text-white">
                 With a strong foundation in full-stack development and a passion
                 for clean code, I strive to create software that not only works
                 but excels in performance and maintainability.
@@ -123,9 +121,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* Diagonal separator background */}
-      <div className="absolute top-0 left-0 w-full h-full bg-linear-to-tr from-blue-100 via-white to-pink-100 -z-10 transform -skew-y-3"></div>
     </section>
   );
 }

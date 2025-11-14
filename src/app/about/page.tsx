@@ -19,8 +19,8 @@ export default function AboutPage() {
     <section id="about" className="about section p-4 md:mt-16">
       <div className="container m-auto" data-aos="fade-up" data-aos-delay="100">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="shadow-xl rounded-2xl p-4">
-            <div className="grid grid-cols-2 gap-2">
+          <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800">
+            <div className="grid md:grid-cols-2 gap-2 mb-2">
               <div className="">
                 <img
                   src="/img/Dimas Trian Nugraha.png"
@@ -47,6 +47,10 @@ export default function AboutPage() {
                   <strong>YoE: </strong>{' '}
                   <span>{yearOfExperience}+ Years Experience</span>
                 </p>
+                <p>
+                  <strong>Address: </strong>
+                  <span>{profile.address}</span>
+                </p>
               </div>
             </div>
 
@@ -67,19 +71,21 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="shadow-xl rounded-2xl p-4">
+          <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800">
             <div className="about-me text-justify">
               <h4 className="text-xl uppercase font-bold underline mb-2">
                 <UserCheck className="inline-flex me-2" />
                 <span>About Me</span>
               </h4>
               {profile.about_me.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p className="text-[1rem]" key={index}>
+                  {paragraph}
+                </p>
               ))}
             </div>
           </div>
 
-          <div className="shadow-xl rounded-2xl p-4">
+          <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800">
             <div className="skills-content skills-animation">
               <h5 className="text-xl uppercase font-bold underline">
                 <Frame className="inline-flex me-2" />
@@ -96,7 +102,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="shadow-xl rounded-2xl p-4">
+          <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800">
             <div className="skills-content skills-animation">
               <h5 className="text-xl uppercase font-bold underline">
                 <Settings className="inline-flex me-2" />
@@ -113,7 +119,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="shadow-xl rounded-2xl p-4">
+          <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800">
             <div className="skills-content skills-animation">
               <h5 className="text-xl uppercase font-bold underline">
                 <BrainCircuit className="inline-flex me-2" />

@@ -75,8 +75,8 @@ export default function NotFoundPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="order-1 md:order-2"
             >
-              <div className="relative mx-auto aspect-[4/3] w-full max-w-md">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-indigo-500/20 via-fuchsia-500/20 to-cyan-500/20" />
+              <div className="relative mx-auto aspect-4/3 w-full max-w-md">
+                <div className="absolute inset-0 rounded-3xl bg-linear-to-tr from-indigo-500/20 via-fuchsia-500/20 to-cyan-500/20" />
                 <div className="absolute inset-0 rounded-3xl border border-white/10" />
                 <div className="absolute inset-4 grid grid-cols-6 grid-rows-6 gap-2">
                   {Array.from({ length: 24 }).map((_, i) => (
@@ -97,7 +97,7 @@ export default function NotFoundPage() {
                     />
                   ))}
                 </div>
-                <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-indigo-500/20 via-fuchsia-500/10 to-transparent blur-xl" />
+                <div className="absolute -inset-2 rounded-3xl bg-linear-to-tr from-indigo-500/20 via-fuchsia-500/10 to-transparent blur-xl" />
               </div>
             </motion.div>
           </div>
