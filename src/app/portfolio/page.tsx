@@ -1,11 +1,12 @@
+'use client';
 // src/pages/About.tsx
 import React, { useState } from 'react';
 import { X, Building2, Briefcase, CalendarDays } from 'lucide-react';
-import appData from '../data/my_data.json';
-import type { Certificate } from '../types/skills';
-import type { WorkExperience } from '../types/profile';
+import appData from '../../data/my_data.json';
+import type { Certificate } from '../../types/skills';
+import type { WorkExperience } from '../../types/profile';
 
-const Portfolio: React.FC = () => {
+export default function PortfolioPage() {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [selectedCert, setSelectedCert] = useState<Certificate>({
     id: '',
@@ -23,11 +24,9 @@ const Portfolio: React.FC = () => {
     );
 
   return (
-    <section id="portfolio" className="portfolio section p-6">
+    <section id="portfolio" className="portfolio section p-6 md:mt-16">
       <div className="mb-4">
-        <h3 className="text-2xl font-semibold text-white mb-4">
-          Work Experience
-        </h3>
+        <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
       </div>
       {/* Experiences */}
       <div className="space-y-8 mb-12">
@@ -43,7 +42,7 @@ const Portfolio: React.FC = () => {
                     <h3 className="text-lg md:text-xl font-semibold">
                       {exp.companyName}
                     </h3>
-                    <div className="text-sm text-neutral-600 dark:text-neutral-300 flex flex-wrap gap-2 items-center">
+                    <div className="text-sm text-neutral-600 dark:text-white flex flex-wrap gap-2 items-center">
                       <span className="flex items-center gap-1">
                         <Briefcase className="w-4 h-4" /> {exp.role}
                       </span>
@@ -79,11 +78,11 @@ const Portfolio: React.FC = () => {
 
                   {/* Horizontal scroller */}
                   <div className="-mx-5 px-5">
-                    <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:thin] [scrollbar-color:theme(colors.neutral.400)_transparent]">
+                    <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory [scrollbar-width:thin] [scrollbar-color:var(--color-neutral-400)_transparent]">
                       {(exp.projects ?? []).map((p, j) => (
                         <div
                           key={j}
-                          className="min-w-[280px] md:min-w-[360px] snap-start flex-shrink-0 border rounded-2xl p-4 bg-white/10 shadow-2xl"
+                          className="min-w-[280px] md:min-w-[360px] snap-start shrink-0 border rounded-2xl p-4 bg-white/10 shadow-2xl"
                         >
                           <h4 className="text-base font-semibold mb-2">
                             {p.client}
@@ -122,15 +121,10 @@ const Portfolio: React.FC = () => {
       </div>
 
       <div className="mb-12">
-        <h3 className="text-2xl font-semibold text-white mb-4">
-          Certifications
-        </h3>
+        <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certificates.map((cert, index) => (
-            <div
-              key={index}
-              className="bg-white/10 p-4 rounded-xl text-blue-100"
-            >
+            <div key={index} className="bg-white/10 p-4 rounded-xl shadow-2xl">
               <p>{cert.title}</p>
               <button
                 className="mt-2 underline text-[#FDB913] cursor-pointer"
@@ -147,20 +141,124 @@ const Portfolio: React.FC = () => {
       </div>
 
       <div className="mb-12">
-        <h3 className="text-2xl font-semibold text-white mb-4">
-          Tools & Technologies
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-blue-100">
-          <div className="bg-white/10 p-4 rounded-xl">React.js, Next.js</div>
-          <div className="bg-white/10 p-4 rounded-xl">Node.js, Express</div>
-          <div className="bg-white/10 p-4 rounded-xl">
+        <h3 className="text-2xl font-semibold mb-4">Tools & Technologies</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            React.js, Next.js
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            Node.js, Express
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
             Tailwind CSS, Bootstrap
           </div>
-          <div className="bg-white/10 p-4 rounded-xl">MySQL, PostgreSQL</div>
-          <div className="bg-white/10 p-4 rounded-xl">
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            MySQL, PostgreSQL
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
             Odoo ERP Customization
           </div>
-          <div className="bg-white/10 p-4 rounded-xl">Git, GitHub, CI/CD</div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            Git, GitHub, CI/CD
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-12">
+        <h3 className="text-2xl font-semibold mb-4">My Projects</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            <div className="font-bold">Odoo Queue Screen Management</div>
+            <div>
+              Tech Stack: <span className="font-bold">Odoo ERP</span>
+            </div>
+            <div>
+              Link:{' '}
+              <a
+                href="https://github.com/dimastriann/odoo-queue-screen"
+                target="_blank"
+                className="underline font-bold"
+              >
+                Preview
+              </a>
+            </div>
+            <div>
+              Short Descirption:{' '}
+              <span className="font-bold">
+                Queue Screen Display (Odoo) for Clinic, Hospital etc.
+              </span>
+            </div>
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            <div className="font-bold">Rust REST API</div>
+            <div>
+              Tech Stack:{' '}
+              <span className="font-bold">
+                Rust, Actix Web, Diesel ORM, JWT
+              </span>
+            </div>
+            <div>
+              Link:{' '}
+              <a
+                href="https://github.com/dimastriann/learn-rust-jwt-redis"
+                target="_blank"
+                className="underline font-bold"
+              >
+                Preview
+              </a>
+            </div>
+            <div>
+              Short Descirption:{' '}
+              <span className="font-bold">
+                Rust REST API with JWT Authentication + Simple Point of sale
+              </span>
+            </div>
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            <div className="font-bold">Project Management App</div>
+            <div>
+              Tech Stack:{' '}
+              <span className="font-bold">
+                Fullstack Typescript (NestJS & ReactJS)
+              </span>
+            </div>
+            <div>
+              Link:{' '}
+              <a
+                href="https://github.com/dimastriann/full-stack-typescript"
+                target="_blank"
+                className="underline font-bold"
+              >
+                Preview
+              </a>
+            </div>
+            <div>
+              Short Descirption:{' '}
+              <span className="font-bold">Simple Project Management App</span>
+            </div>
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            <div className="font-bold">Frontend Point of Sale</div>
+            <div>
+              Tech Stack: <span className="font-bold">NextJS</span>
+            </div>
+            <div>
+              Link:{' '}
+              <a
+                href="https://github.com/dimastriann/pos-with-nextjs"
+                target="_blank"
+                className="underline font-bold"
+              >
+                Preview
+              </a>
+            </div>
+            <div>
+              Short Descirption:{' '}
+              <span className="font-bold">
+                Build Simple Point of Sale app with NextJS
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -188,7 +286,7 @@ const Portfolio: React.FC = () => {
       )}
     </section>
   );
-};
+}
 
 export function SectionHeader({
   title,
@@ -229,5 +327,3 @@ export function Tag({
     </span>
   );
 }
-
-export default Portfolio;
