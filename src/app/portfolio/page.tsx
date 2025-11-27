@@ -24,7 +24,7 @@ export default function PortfolioPage() {
     );
 
   return (
-    <section id="portfolio" className="portfolio section p-6 md:mt-16">
+    <section id="portfolio" className="portfolio section p-6 max-md:p-3 md:mt-16">
       <div className="mb-4">
         <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
       </div>
@@ -82,7 +82,7 @@ export default function PortfolioPage() {
                       {(exp.projects ?? []).map((p, j) => (
                         <div
                           key={j}
-                          className="min-w-[280px] md:min-w-[360px] snap-start shrink-0 border rounded-2xl p-4 bg-white/10 shadow-2xl"
+                          className="min-w-[280px] md:min-w-[360px] max-md:max-w-[300px] snap-start shrink-0 border rounded-2xl p-4 bg-white/10 shadow-2xl"
                         >
                           <h4 className="text-base font-semibold mb-2">
                             {p.client}
@@ -144,10 +144,10 @@ export default function PortfolioPage() {
         <h3 className="text-2xl font-semibold mb-4">Tools & Technologies</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white/10 p-4 rounded-xl shadow-xl">
-            React.js, Next.js
+            Python, Typescript, Rust
           </div>
           <div className="bg-white/10 p-4 rounded-xl shadow-xl">
-            Node.js, Express
+            Node.js, Express, React.js, Next.js
           </div>
           <div className="bg-white/10 p-4 rounded-xl shadow-xl">
             Tailwind CSS, Bootstrap
@@ -161,6 +161,15 @@ export default function PortfolioPage() {
           <div className="bg-white/10 p-4 rounded-xl shadow-xl">
             Git, GitHub, CI/CD
           </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            Docker, Linux Environment
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            Locust, Playwright
+          </div>
+          <div className="bg-white/10 p-4 rounded-xl shadow-xl">
+            VS Code, Pycharm, RustRover, Cursor
+          </div>
         </div>
       </div>
 
@@ -173,7 +182,7 @@ export default function PortfolioPage() {
               Tech Stack: <span className="font-bold">Odoo ERP</span>
             </div>
             <div>
-              Link:{' '}
+              Github:{' '}
               <a
                 href="https://github.com/dimastriann/odoo-queue-screen"
                 target="_blank"
@@ -198,7 +207,7 @@ export default function PortfolioPage() {
               </span>
             </div>
             <div>
-              Link:{' '}
+              Github:{' '}
               <a
                 href="https://github.com/dimastriann/learn-rust-jwt-redis"
                 target="_blank"
@@ -223,7 +232,7 @@ export default function PortfolioPage() {
               </span>
             </div>
             <div>
-              Link:{' '}
+              Github:{' '}
               <a
                 href="https://github.com/dimastriann/full-stack-typescript"
                 target="_blank"
@@ -243,7 +252,7 @@ export default function PortfolioPage() {
               Tech Stack: <span className="font-bold">NextJS</span>
             </div>
             <div>
-              Link:{' '}
+              Github:{' '}
               <a
                 href="https://github.com/dimastriann/pos-with-nextjs"
                 target="_blank"

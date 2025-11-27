@@ -13,12 +13,11 @@ const Skills: React.FC<Skill> = ({ id, label, level, level_label }) => {
     <div className="progress" data-id={id}>
       <div className="skill">
         <span>{label}</span>
-        <span className="mx-2 fst-italic">{level_label}</span>
-        <i className="val">{level}%</i>
+        <span className="mx-2 italic">{level_label}</span>
       </div>
-      <div className="progress-bar-wrap bg-blue-100 dark:bg-gray-50">
+      <div className="progress-bar-wrap bg-blue-100 dark:bg-neutral-900">
         <div
-          className="progress-bar bg-gray-600"
+          className="progress-bar bg-gray-600 dark:bg-white"
           role="progressbar"
           aria-valuenow={level}
           aria-valuemin={0}

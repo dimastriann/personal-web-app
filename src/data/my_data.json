@@ -112,7 +112,7 @@
                     {
                         "client": "Bulog, PT",
                         "highlights": [
-                            "Custom budget reports using full SQL for performance",
+                            "Custom budget reports using full SQL for better performance",
                             "Integrated Odoo masters & transactions across instances via API/JSON-RPC (invoices/bills)"
                         ],
                         "tags": [
@@ -362,7 +362,7 @@
                 "id": "en",
                 "label": "English",
                 "level_label": "Upper Intermediate",
-                "level": 70,
+                "level": 75,
                 "color": ""
             },
             {
@@ -374,16 +374,16 @@
             },
             {
                 "id": "sunda",
-                "label": "Sunda",
+                "label": "Sundanese",
                 "level_label": "Native",
                 "level": 95,
                 "color": ""
             },
             {
-                "id": "sa",
-                "label": "Arabic",
+                "id": "fr",
+                "label": "French",
                 "level_label": "Beginner",
-                "level": 25,
+                "level": 22,
                 "color": ""
             }
         ],
