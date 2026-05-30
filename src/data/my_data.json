@@ -12,7 +12,7 @@
             "I am a passionate and dedicated Software Engineer with a strong foundation in programming, starting from my college years. Since my 4th semester, I've been honing my skills in various programming languages, and my interest in web development has grown ever since.",
             "Specializing in web technologies, I have hands-on experience with PHP, Python, JavaScript, CSS, HTML, MySQL, PostgreSQL, Oracle, and MongoDB. Over the years, I have developed a deep understanding of backend and frontend development, enabling me to create seamless, efficient, and user-friendly applications.",
             "Since February 2019, I have been working as a Python Developer and Odoo Developer in an ERP consulting company, where I have gained valuable experience in implementing and customizing ERP systems to meet the unique needs of businesses. My expertise in Python and Odoo has allowed me to contribute significantly to various projects, ensuring high-quality solutions and client satisfaction.",
-            "I’m constantly exploring new technologies and frameworks to enhance my skill set and stay up-to-date with industry trends. My goal is to continue growing as a developer while contributing to innovative projects in the web development and ERP space."
+            "Beyond ERP, I actively build across the full stack: from Rust-based systems and CLI tools (including Tauri desktop apps and MCP servers), to mobile apps with Flutter and React Native, to AI-powered backends with FastAPI. I’m passionate about emerging technologies and always pushing the boundaries of what I can build."
         ],
         "educations": [
             {
@@ -333,6 +333,41 @@
                 "id": "pyqt",
                 "label": "Pyqt (Python)",
                 "level": 70,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "fastapi",
+                "label": "FastAPI",
+                "level": 65,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "django",
+                "label": "Django",
+                "level": 60,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "react_native",
+                "label": "React Native",
+                "level": 55,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "flutter",
+                "label": "Flutter",
+                "level": 55,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "tauri",
+                "label": "Tauri",
+                "level": 50,
                 "color": "",
                 "logo": ""
             }
