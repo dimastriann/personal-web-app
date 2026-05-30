@@ -34,7 +34,7 @@
                 "address": "Jakarta, Indonesia",
                 "summary": [
                     "Customized modules: Almost all the main modules",
-                    "Implemented and customized Odoo versions 10–18 (community & enterprise)",
+                    "Implemented and customized Odoo versions 10–19 (community & enterprise)",
                     "Strong functional understanding across customized and core modules"
                 ],
                 "projects": [
@@ -426,27 +426,27 @@
             {
                 "id": "1xw2RIDOZCMLdYvqPZ4i2DnnHuQQG62dn",
                 "title": "Software Engineer",
-                "image": "https://drive.google.com/thumbnail?id=1xw2RIDOZCMLdYvqPZ4i2DnnHuQQG62dn&sz=s800"
+                "image": "img/certs/SWE_HackerRank.png"
             },
             {
                 "id": "1UcA641oRrJyc4hpJEX7Ay9cjrnu_vuh2",
                 "title": "SQL Intermediate",
-                "image": "https://drive.google.com/thumbnail?id=1UcA641oRrJyc4hpJEX7Ay9cjrnu_vuh2&sz=s800"
+                "image": "img/certs/SQL_Intermediate.png"
             },
             {
                 "id": "1JirmRknO3_aApK8ryWUWc5goJzk9NHH9",
                 "title": "Frontend Developer",
-                "image": "https://drive.google.com/thumbnail?id=1JirmRknO3_aApK8ryWUWc5goJzk9NHH9&sz=s800"
+                "image": "img/certs/FE_HackerRank.png"
             },
             {
                 "id": "1exafP2qsBfyKFfZwrUoALzfitVZ6rIH0",
                 "title": "Rest API Intermediate",
-                "image": "https://drive.google.com/thumbnail?id=1exafP2qsBfyKFfZwrUoALzfitVZ6rIH0&sz=s800"
+                "image": "img/certs/REST_API_HackerRank.png"
             },
             {
                 "id": "UC-00a2b778-52ef-4bb4-8bc6-cc03a38e9226",
                 "title": "Typescript + Framework",
-                "image": "https://udemy-certificate.s3.amazonaws.com/image/UC-00a2b778-52ef-4bb4-8bc6-cc03a38e9226.jpg"
+                "image": "img/certs/TS-Udemy.jpg"
             }
         ]
     },
