@@ -9,7 +9,12 @@ import {
   staggerItem,
 } from '../../components/motion/variants';
 
-type FormState = { name: string; email: string; subject: string; message: string };
+type FormState = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
 export default function ContactPage() {
@@ -34,7 +39,10 @@ export default function ContactPage() {
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           from_name: 'Portfolio Contact Form',
