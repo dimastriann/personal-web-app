@@ -8,6 +8,7 @@ import {
   UserCheck,
   GraduationCap,
   CalendarDays,
+  Bot,
 } from 'lucide-react';
 import Skills from '../../components/Skill';
 import ScrollReveal from '../../components/motion/ScrollReveal';
@@ -18,7 +19,7 @@ import appData from '../../data/my_data.json';
 export const metadata: Metadata = {
   title: 'About | Dimas Trian Nugraha',
   description:
-    'Learn more about Dimas Trian Nugraha — a Senior Odoo Developer and Software Engineer with 5+ years of experience in Python, TypeScript, Rust, and full-stack web development.',
+    'Learn more about Dimas Trian Nugraha — a Lead Software Engineer and Odoo Technical Consultant with 7+ years of experience in Python, TypeScript, Rust, full-stack web development, and AI-native workflows (Claude Code, RAG, MCP).',
 };
 
 export default function AboutPage() {
@@ -178,6 +179,25 @@ export default function AboutPage() {
                   <div className="text-xs text-neutral-500">{edu.address}</div>
                 </div>
               ))}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.0}>
+            <div className="shadow-xl rounded-2xl p-4 dark:bg-gray-800 h-full md:col-span-2 border border-[#004D98]/20">
+              <div className="skills-content skills-animation">
+                <h5 className="text-xl uppercase font-bold underline">
+                  <Bot className="inline-flex me-2" />
+                  <span>AI Tooling & Workflows</span>
+                </h5>
+                {skills.ai_tooling.map((skill) => (
+                  <Skills
+                    id={skill.id}
+                    label={skill.label}
+                    level={skill.level}
+                    key={skill.id}
+                  />
+                ))}
+              </div>
             </div>
           </ScrollReveal>
         </div>

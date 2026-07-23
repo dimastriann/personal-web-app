@@ -126,6 +126,8 @@ export default function PortfolioPage() {
     'Docker, Linux Environment',
     'Locust, Playwright',
     'VS Code, PyCharm, RustRover, Cursor',
+    'Claude Code, Cursor, Antigravity',
+    'Model Context Protocol (MCP), RAG, Agentic AI',
   ];
 
   return (

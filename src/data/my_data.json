@@ -3,8 +3,8 @@
         "fisrt_name": "Dimas",
         "last_name": "Trian Nugraha",
         "full_name": "Dimas Trian Nugraha",
-        "role": "Software Engineer / Software Developer",
-        "current_role": "Odoo Technical Consultant / Developer",
+        "role": "Software Engineer / Full-Stack & AI Systems",
+        "current_role": "Lead Developer & Senior Odoo Technical Consultant",
         "current_level": "Senior",
         "first_yow": "2019",
         "address": "Jakarta, Indonesia",
@@ -12,7 +12,8 @@
             "I am a passionate and dedicated Software Engineer with a strong foundation in programming, starting from my college years. Since my 4th semester, I've been honing my skills in various programming languages, and my interest in web development has grown ever since.",
             "Specializing in web technologies, I have hands-on experience with PHP, Python, JavaScript, CSS, HTML, MySQL, PostgreSQL, Oracle, and MongoDB. Over the years, I have developed a deep understanding of backend and frontend development, enabling me to create seamless, efficient, and user-friendly applications.",
             "Since February 2019, I have been working as a Python Developer and Odoo Developer in an ERP consulting company, where I have gained valuable experience in implementing and customizing ERP systems to meet the unique needs of businesses. My expertise in Python and Odoo has allowed me to contribute significantly to various projects, ensuring high-quality solutions and client satisfaction.",
-            "Beyond ERP, I actively build across the full stack: from Rust-based systems and CLI tools (including Tauri desktop apps and MCP servers), to mobile apps with Flutter and React Native, to AI-powered backends with FastAPI. I’m passionate about emerging technologies and always pushing the boundaries of what I can build."
+            "Beyond ERP, I actively build across the full stack: from Rust-based systems and CLI tools (including Tauri desktop apps and MCP servers), to mobile apps with Flutter and React Native, to AI-powered backends with FastAPI. I’m passionate about emerging technologies and always pushing the boundaries of what I can build.",
+            "I've also gone all-in on AI-native development over the past year — using Claude Code, Cursor, and Antigravity daily to speed up implementation and ticket resolution. I built a custom AI helpdesk agent with Retrieval-Augmented Generation (RAG) and the Model Context Protocol (MCP) to help support teams query internal ERP documentation and troubleshoot issues automatically."
         ],
         "educations": [
             {
@@ -30,14 +31,43 @@
                 "from": "August 2020",
                 "to": "Present",
                 "companyName": "Arkana Solusi Digital, PT",
-                "role": "Senior Odoo Developer (Technical Consultant)",
+                "role": "Lead Developer & Senior Odoo Technical Consultant",
                 "address": "Jakarta, Indonesia",
                 "summary": [
                     "Customized modules: Almost all the main modules",
                     "Implemented and customized Odoo versions 10–19 (community & enterprise)",
-                    "Strong functional understanding across customized and core modules"
+                    "Strong functional understanding across customized and core modules",
+                    "AI-native workflow productivity: integrated Claude Code, Cursor, and Antigravity into daily development, accelerating ticket resolution and code implementation cycles",
+                    "Optimized database query structures and Odoo access patterns, cutting ORM load times by up to 90% and report latency by up to 80% (15+ min to <5 min)",
+                    "Managed production VPS environments with Docker, Portainer, and Nginx Proxy Manager; mentored junior developers and established automated testing/profiling baselines using Playwright and Locust"
                 ],
                 "projects": [
+                    {
+                        "client": "AI Support Helpdesk Agent (Internal)",
+                        "highlights": [
+                            "Built a custom AI helpdesk agent using Retrieval-Augmented Generation (RAG) and Model Context Protocol (MCP)",
+                            "Integrated internal ERP documentation to help support teams retrieve context and resolve routine tickets faster"
+                        ],
+                        "tags": [
+                            "AI",
+                            "RAG",
+                            "MCP",
+                            "Agentic AI",
+                            "Automation"
+                        ]
+                    },
+                    {
+                        "client": "BRC Swiss (Switzerland)",
+                        "highlights": [
+                            "Provided end-to-end technical and functional support for a Swiss enterprise client, directly interfacing with stakeholders",
+                            "Handled requirement gathering, issue resolution, and live system demos for Swiss operational workflows"
+                        ],
+                        "tags": [
+                            "Odoo",
+                            "Consulting",
+                            "International"
+                        ]
+                    },
                     {
                         "client": "Indoturbine, PT",
                         "highlights": [
@@ -275,6 +305,50 @@
                 "id": "rust",
                 "label": "Rust",
                 "level": 30,
+                "color": "",
+                "logo": ""
+            }
+        ],
+        "ai_tooling": [
+            {
+                "id": "claude_code",
+                "label": "Claude Code",
+                "level": 90,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "cursor",
+                "label": "Cursor",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "mcp",
+                "label": "Model Context Protocol (MCP)",
+                "level": 85,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "rag",
+                "label": "RAG (Retrieval-Augmented Generation)",
+                "level": 80,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "agentic_ai",
+                "label": "Agentic AI / AI Helpdesk Integrations",
+                "level": 80,
+                "color": "",
+                "logo": ""
+            },
+            {
+                "id": "antigravity",
+                "label": "Antigravity",
+                "level": 70,
                 "color": "",
                 "logo": ""
             }

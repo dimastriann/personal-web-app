@@ -10,10 +10,20 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   authors: [{ name: 'Dimastriann' }],
   applicationName: 'Dimas Portfolio Website',
-  keywords: ['Software Engineer', 'ODOO ERP', 'Typescript', 'Rust', 'Python'],
-  title: 'Dimas Trian Nugraha | Software Engineer | Odoo ERP',
+  keywords: [
+    'Software Engineer',
+    'ODOO ERP',
+    'Typescript',
+    'Rust',
+    'Python',
+    'AI Engineer',
+    'Claude Code',
+    'RAG',
+    'MCP',
+  ],
+  title: 'Dimas Trian Nugraha | Software Engineer | Odoo ERP | AI Systems',
   description:
-    'Dimas Trian Nugraha is a passionate Software Engineer specializing in Odoo ERP, full-stack web development using React, Node.js, and modern JavaScript frameworks. Explore his portfolio and certifications.',
+    'Dimas Trian Nugraha is a Lead Software Engineer and Odoo Technical Consultant specializing in Odoo ERP, full-stack web development, and AI-native workflows (Claude Code, Cursor, RAG, MCP). Explore his portfolio and certifications.',
 };
 
 export default function RootLayout({

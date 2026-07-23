@@ -9,7 +9,7 @@ const roles = [
   'Software Engineer',
   'Rust Developer',
   'Full Stack Developer',
-  'AI Enthusiast',
+  'AI-Native Developer',
 ];
 
 export default function HomePage() {
@@ -23,6 +23,8 @@ export default function HomePage() {
     { label: 'OWL (Odoo)', cls: 'bg-blue-200 text-yellow-800' },
     { label: 'SQL', cls: 'bg-cyan-100 text-yellow-800' },
     { label: 'REST API', cls: 'bg-teal-100 text-yellow-800' },
+    { label: 'Claude Code', cls: 'bg-indigo-100 text-indigo-800' },
+    { label: 'RAG / MCP', cls: 'bg-orange-100 text-orange-800' },
   ];
 
   const leftLogos = [
@@ -198,6 +200,10 @@ export default function HomePage() {
                 With a strong foundation in full-stack development and a passion
                 for clean code, I strive to create software that not only works
                 but excels in performance and maintainability.
+              </p>
+              <p className="text-gray-700 text-justify dark:text-white">
+                I also work AI-natively — using Claude Code, Cursor, and RAG/MCP
+                integrations daily to build agentic tools and ship faster.
               </p>
               <div className="flex flex-wrap gap-3 pt-3">
                 {tags.map((t, i) => (
